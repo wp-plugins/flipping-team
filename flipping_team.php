@@ -122,7 +122,7 @@ function flipping_team_create_menu() {
 	//create new top-level menu
 	add_menu_page('Flipping Team Plugin Settings', 'Flipping Team', 'administrator', 'flipping-menu', 'flipping_team', plugins_url('/images/icon.png', __FILE__));
 	//call register settings function
-	add_action( 'admin_init', 'register_mysettings' );
+	//add_action( 'admin_init', 'register_mysettings' );
 
 	add_submenu_page( 'flipping-menu', 'View All Team Members', 'View All', 'administrator', 'team_view', 'team_view');
 	add_submenu_page( 'flipping-menu', 'Add Team Member', 'Add', 'administrator', 'team_add', 'team_add');
@@ -430,7 +430,7 @@ else if(isset($_REQUEST['deleteid']))
 				</td>
 				</tr>
 		<?}?>	
-			</table>?>
+			</table>
 <?php }	
 
 else
