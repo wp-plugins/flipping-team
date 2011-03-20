@@ -3,7 +3,7 @@
 	Plugin Name: Flipping Team
 	Plugin URI: http://abhishekgupta92.info
 	Description: Team page for your blog who made it possible.
-	Version: 1.0
+	Version: 1.1
 	Author: abhishekgupta92
 	Author URI: http://abhishekgupta92.info
 
