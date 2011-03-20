@@ -31,9 +31,10 @@ I guess the answer remains the same as the above..
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1.png` (or jpg, jpeg, gif)
-2. This is the second screen shot
+1. View all Team Members. The team page lists all the team members that are currently visible on the team page.
+2. The page shows the form to add new team members to the page of flipping members.
+3. The page shows when media upload box pops up and the user can upload the image.
+4. Here you can set the options for the plugin.
 
 == Changelog ==
 

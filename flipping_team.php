@@ -63,7 +63,7 @@ function flipping_team_install () {
 
 		$table_name = $wpdb->prefix . "team";	
 		$name  = "Abhishek Gupta";
-		$website = "http://thelazy.info";
+		$website = "http://abhishekgupta92.info";
 		$info = "Abhishek is a sophomore Undergraduate student at IIT Delhi.";
 		$imageloc = "wp-content/plugins/flipping_team/images/images.jpeg";
 
