@@ -1,11 +1,11 @@
 <?php
 /*
 	Plugin Name: Flipping Team
-	Plugin URI: http://thelazy.info
+	Plugin URI: http://abhishekgupta92.info
 	Description: Team page for your blog who made it possible.
-	Version: The Plugin's Version Number, e.g.: 1.0
+	Version: 1.0
 	Author: abhishekgupta92
-	Author URI: http://thelazy.info
+	Author URI: http://abhishekgupta92.info
 
 	Copyright 2011 Abhishek Gupta (email : abhishekgupta.iitd@gmail.com)
 
