@@ -4,7 +4,7 @@ Donate link: http://thelazy.info/
 Tags: team, authors, flip, jquery
 Requires at least: 2.0.2
 Tested up to: 3.0.1
-Stable tag: 1.1
+Stable tag: 1.2
 
 Team page for your blog who made it possible.
 
