@@ -111,11 +111,24 @@ function flipping_team()
 {
 	if(isset($_REQUEST['team_size']))
 	{
-		add_option("team_size", $_REQUEST['team_size'], '', 'yes');
+		if(get_option('team_size') != $_REQUEST['team_size'] )
+			update_option('team_size', $_REQUEST['team_size']);
+		else
+			add_option("team_size", $_REQUEST['team_size'], '', 'yes');
 	}
 	if(isset($_REQUEST['team_title']))
 	{
-		add_option("team_title", $_REQUEST['team_title'], '', 'yes');
+		if(get_option('team_title') != $_REQUEST['team_title'] )
+			update_option('team_title', $_REQUEST['team_title']);
+		else
+			add_option("team_title", $_REQUEST['team_title'], '', 'yes');
+	}
+	if(isset($_REQUEST['if_team_sidebar']))
+	{
+		if(get_option('if_team_sidebar') != $_REQUEST['if_team_sidebar'] )
+			update_option('if_team_sidebar', $_REQUEST['if_team_sidebar']);
+		else
+			add_option("if_team_sidebar", $_REQUEST['if_team_sidebar'], '', 'yes');
 	}
 ?>
 	<div class="wrap">
@@ -134,6 +147,15 @@ function flipping_team()
         <th scope="row">Title</th>
         <td><input type="text" name="team_title" value="<?php echo get_option('team_title'); ?>" /></td>
         </tr>
+
+	<tr valign="top">
+	<th scope="row">Add Sidebar</th>
+	<td>
+		<select name="if_team_sidebar">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</select>
+	</td>
     </table>
     
     <p class="submit">
