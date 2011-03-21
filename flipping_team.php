@@ -3,7 +3,7 @@
 	Plugin Name: Flipping Team
 	Plugin URI: http://abhishekgupta92.info
 	Description: Team page for your blog who made it possible.
-	Version: 1.0
+	Version: 1.2
 	Author: abhishekgupta92
 	Author URI: http://abhishekgupta92.info
 
@@ -57,7 +57,7 @@ function flipping_team_install () {
 		$name  = "Abhishek Gupta";
 		$website = "http://abhishekgupta92.info";
 		$info = "Abhishek is a sophomore Undergraduate student at IIT Delhi.";
-		$imageloc = "wp-content/plugins/flipping_team/images/images.jpeg";
+		$imageloc = "wp-content/plugins/flipping-team/images/images.jpeg";
 
 		$rows_affected = $wpdb->insert( $table_name, array( 'time' => current_time('mysql'), 'name' => $name, 'url' => $website, 'imageloc' => $imageloc, 'info' => $info ) );
 
@@ -65,7 +65,7 @@ function flipping_team_install () {
 		$name  = "Abhishek Gupta";
 		$website = "http://abhishekgupta92.info";
 		$info = "Abhishek is a sophomore Undergraduate student at IIT Delhi.";
-		$imageloc = "wp-content/plugins/flipping_team/images/images.jpeg";
+		$imageloc = "wp-content/plugins/flipping-team/images/images.jpeg";
 
 		$rows_affected = $wpdb->insert( $table_name, array( 'time' => current_time('mysql'), 'name' => $name, 'url' => $website, 'imageloc' => $imageloc, 'info' => $info ) );
 		
@@ -91,28 +91,6 @@ function flipping_team_install () {
 }
 register_activation_hook(__FILE__, 'flipping_team_install');
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////// Lets add the menu for the options. DEPRECATED /////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//	add_action('admin_menu', 'flipping_team_menu');
-//	function flipping_team_menu() {
-//		add_options_page('Flipping Team Options', 'Flipping Team', 'manage_options', 'flipping_team', 'my_plugin_options');
-//	}
-//
-//	function my_plugin_options() {
-//		if (!current_user_can('manage_options'))  {
-//			wp_die( __('You do not have sufficient permissions to access this page.') );
-//		}
-//		echo '<div class="wrap">';
-		?>
-		<!--TEST -->
-		<?
-//		echo '</div>';
-//	}
-//
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////// Lets add the menu for the options. ////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // create custom plugin settings menu
 add_action('admin_menu', 'flipping_team_create_menu');
@@ -122,7 +100,7 @@ function flipping_team_create_menu() {
 	//create new top-level menu
 	add_menu_page('Flipping Team Plugin Settings', 'Flipping Team', 'administrator', 'flipping-menu', 'flipping_team', plugins_url('/images/icon.png', __FILE__));
 	//call register settings function
-	add_action( 'admin_init', 'register_mysettings' );
+	//add_action( 'admin_init', 'register_mysettings' );
 
 	add_submenu_page( 'flipping-menu', 'View All Team Members', 'View All', 'administrator', 'team_view', 'team_view');
 	add_submenu_page( 'flipping-menu', 'Add Team Member', 'Add', 'administrator', 'team_add', 'team_add');
@@ -168,15 +146,15 @@ function flipping_team()
 function team_add()
 {
 ?>
-    <script src="../wp-content/plugins/flipping_team/thickbox/thickbox.js"></script>
-    <script src="../wp-content/plugins/flipping_team/my-script.js"></script>
+    <script src="../wp-content/plugins/flipping-team/thickbox/thickbox.js"></script>
+    <script src="../wp-content/plugins/flipping-team/my-script.js"></script>
     <script src="js/media-upload.js"></script>
-	<link rel="stylesheet" type="text/css" href="../wp-content/plugins/flipping_team/thickbox/thickbox.css" /> 
+	<link rel="stylesheet" type="text/css" href="../wp-content/plugins/flipping-team/thickbox/thickbox.css" /> 
 
 		<div class="wrap">
 	
 <?php
-	if(isset($_REQUEST['name']) && $_REQUEST['action']=="insert")
+	if(isset($_REQUEST['page']) && $_REQUEST['action']=="insert")
 	{
 		global $wpdb;
 		$table_name = $wpdb->prefix . "team";	
@@ -192,7 +170,7 @@ function team_add()
 			<br/><br/>
 			<h2 align='center'>Add Member to Flipping Team</h2>
 
-			<form method="post" action="admin.php?page=flipping-menu&action=insert">
+			<form method="post" action="admin.php?page=team_add&action=insert">
 				<table class="form-table">
 					<tr valign="top">
 					<th scope="row">Name</th>
@@ -259,10 +237,10 @@ if(isset($_REQUEST['editid']))
 {
 			$id=$_REQUEST['editid'];
 ?>
-			<script src="../wp-content/plugins/flipping_team/thickbox/thickbox.js"></script>
-			<script src="../wp-content/plugins/flipping_team/my-script.js"></script>
+			<script src="../wp-content/plugins/flipping-team/thickbox/thickbox.js"></script>
+			<script src="../wp-content/plugins/flipping-team/my-script.js"></script>
 			<script src="js/media-upload.js"></script>
-			<link rel="stylesheet" type="text/css" href="../wp-content/plugins/flipping_team/thickbox/thickbox.css" /> 
+			<link rel="stylesheet" type="text/css" href="../wp-content/plugins/flipping-team/thickbox/thickbox.css" /> 
 
 				<div class="wrap">
 			<?php
@@ -287,7 +265,7 @@ if(isset($_REQUEST['editid']))
 			?>
 					<h2>Flipping Team</h2>
 
-					<form method="post" action='<?php echo "admin.php?page=flipping-menu&action=update&editid=".$id ; ?> '>
+					<form method="post" action='<?php echo "admin.php?page=team_view&action=update&editid=".$id ; ?> '>
 						<table class="form-table">
 							<tr valign="top">
 							<th scope="row">Name</th>
@@ -430,7 +408,7 @@ else if(isset($_REQUEST['deleteid']))
 				</td>
 				</tr>
 		<?}?>	
-			</table>?>
+			</table>
 <?php }	
 
 else
