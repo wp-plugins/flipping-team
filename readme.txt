@@ -30,11 +30,11 @@ Wait for sometime. I would add this feature shortly.
 I guess the answer remains the same as the above..
 
 == Screenshots ==
-
-1. View all Team Members. The team page lists all the team members that are currently visible on the team page.
-2. The page shows the form to add new team members to the page of flipping members.
-3. The page shows when media upload box pops up and the user can upload the image.
-4. Here you can set the options for the plugin.
+1. This is how your page looks like.
+2. View all Team Members. The team page lists all the team members that are currently visible on the team page.
+3. The page shows the form to add new team members to the page of flipping members.
+4. The page shows when media upload box pops up and the user can upload the image.
+5. Here you can set the options for the plugin.
 
 == Changelog ==
 

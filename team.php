@@ -94,6 +94,10 @@ shuffle($sponsors);
 			</div><!-- #content -->
 		</div><!-- #container -->
 
-<?php get_sidebar(); ?>
+<?php 
+if(get_option('if_team_sidebar') == "yes")
+{
+	get_sidebar();
+}
+?>
 <?php get_footer(); ?>
-
