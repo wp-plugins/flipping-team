@@ -9,22 +9,18 @@
  */
 
 ?>
-	<link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/wp-content/plugins/flipping-team/styles.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_site_url(); ?>/wp-content/plugins/flipping-team/styles.css" />
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="<?php echo get_site_url() ?>/wp-content/plugins/flipping-team/jquery.flip.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/plugins/flipping-team/jquery.flip.min.js"></script>
 
-	<script type="text/javascript" src="<?php echo get_site_url() ?>/wp-content/plugins/flipping-team/script.js"></script>
+	<script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/plugins/flipping-team/script.js"></script>
 <?php
 	get_header();
 ?>
 	<div id="container">
 		<div id="content" role="main">
-<?php
-$blog_title = get_site_url();
-echo $blog_title;
-?>
 <?php
 	/* Queue the first post, that way we know who
 	 * the author is when we try to get their name,
