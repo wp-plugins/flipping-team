@@ -3,7 +3,7 @@
 	Plugin Name: Flipping Team
 	Plugin URI: http://abhishekgupta92.info
 	Description: Team page for your blog who made it possible.
-	Version: 1.3
+	Version: 1.4
 	Author: abhishekgupta92
 	Author URI: http://abhishekgupta92.info
 
@@ -57,7 +57,7 @@ function flipping_team_install () {
 		$name  = "Abhishek Gupta";
 		$website = "http://abhishekgupta92.info";
 		$info = "Abhishek is a sophomore Undergraduate student at IIT Delhi.";
-		$imageloc = "wp-content/plugins/flipping-team/images/images.jpeg";
+		$imageloc = get_site_url()."/wp-content/plugins/flipping-team/images/images.jpeg";
 
 		$rows_affected = $wpdb->insert( $table_name, array( 'time' => current_time('mysql'), 'name' => $name, 'url' => $website, 'imageloc' => $imageloc, 'info' => $info ) );
 
@@ -65,7 +65,7 @@ function flipping_team_install () {
 		$name  = "Abhishek Gupta";
 		$website = "http://abhishekgupta92.info";
 		$info = "Abhishek is a sophomore Undergraduate student at IIT Delhi.";
-		$imageloc = "wp-content/plugins/flipping-team/images/images.jpeg";
+		$imageloc = get_site_url()."/wp-content/plugins/flipping-team/images/images.jpeg";
 
 		$rows_affected = $wpdb->insert( $table_name, array( 'time' => current_time('mysql'), 'name' => $name, 'url' => $website, 'imageloc' => $imageloc, 'info' => $info ) );
 		
@@ -111,24 +111,15 @@ function flipping_team()
 {
 	if(isset($_REQUEST['team_size']))
 	{
-		if(get_option('team_size') != $_REQUEST['team_size'] )
-			update_option('team_size', $_REQUEST['team_size']);
-		else
-			add_option("team_size", $_REQUEST['team_size'], '', 'yes');
+		add_option("team_size", $_REQUEST['team_size'], '', 'yes');
 	}
 	if(isset($_REQUEST['team_title']))
 	{
-		if(get_option('team_title') != $_REQUEST['team_title'] )
-			update_option('team_title', $_REQUEST['team_title']);
-		else
-			add_option("team_title", $_REQUEST['team_title'], '', 'yes');
+		add_option("team_title", $_REQUEST['team_title'], '', 'yes');
 	}
 	if(isset($_REQUEST['if_team_sidebar']))
 	{
-		if(get_option('if_team_sidebar') != $_REQUEST['if_team_sidebar'] )
-			update_option('if_team_sidebar', $_REQUEST['if_team_sidebar']);
-		else
-			add_option("if_team_sidebar", $_REQUEST['if_team_sidebar'], '', 'yes');
+		add_option("if_team_sidebar", $_REQUEST['if_team_sidebar'], '', 'yes');
 	}
 ?>
 	<div class="wrap">
@@ -151,7 +142,7 @@ function flipping_team()
 	<tr valign="top">
 	<th scope="row">Add Sidebar</th>
 	<td>
-		<select name="if_team_sidebar">
+		<select>
 			<option value="yes">Yes</option>
 			<option value="no">No</option>
 		</select>
@@ -168,10 +159,10 @@ function flipping_team()
 function team_add()
 {
 ?>
-    <script src="../wp-content/plugins/flipping-team/thickbox/thickbox.js"></script>
-    <script src="../wp-content/plugins/flipping-team/my-script.js"></script>
+    <script src= "<?php echo get_site_url()?>/wp-content/plugins/flipping-team/thickbox/thickbox.js"></script>
+    <script src="<?php echo get_site_url()?>/wp-content/plugins/flipping-team/my-script.js"></script>
     <script src="js/media-upload.js"></script>
-	<link rel="stylesheet" type="text/css" href="../wp-content/plugins/flipping-team/thickbox/thickbox.css" /> 
+	<link rel="stylesheet" type="text/css" href="<?php echo get_site_url()?>/wp-content/plugins/flipping-team/thickbox/thickbox.css" /> 
 
 		<div class="wrap">
 	
@@ -259,10 +250,10 @@ if(isset($_REQUEST['editid']))
 {
 			$id=$_REQUEST['editid'];
 ?>
-			<script src="../wp-content/plugins/flipping-team/thickbox/thickbox.js"></script>
-			<script src="../wp-content/plugins/flipping-team/my-script.js"></script>
+			<script src="<?php echo get_site_url()?>/wp-content/plugins/flipping-team/thickbox/thickbox.js"></script>
+			<script src="<?php echo get_site_url()?>/wp-content/plugins/flipping-team/my-script.js"></script>
 			<script src="js/media-upload.js"></script>
-			<link rel="stylesheet" type="text/css" href="../wp-content/plugins/flipping-team/thickbox/thickbox.css" /> 
+			<link rel="stylesheet" type="text/css" href="<?php echo get_site_url()?>/wp-content/plugins/flipping-team/thickbox/thickbox.css" /> 
 
 				<div class="wrap">
 			<?php
