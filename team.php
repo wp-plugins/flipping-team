@@ -92,7 +92,9 @@ shuffle($sponsors);
 			</div><!-- #content -->
 		</div><!-- #container -->
 
-<?php 
+<?php
+   get_template_part( 'loop', 'index' );
+ 
 if(get_option('if_team_sidebar') == "yes")
 {
 	get_sidebar();
