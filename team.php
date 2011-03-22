@@ -50,7 +50,6 @@ foreach($myrows as $row)
 // Randomizing the order of sponsors:
 
 shuffle($sponsors);
-
 ?>
 
 
@@ -69,7 +68,9 @@ shuffle($sponsors);
 				echo'
 				<div class="sponsor" title="Click to flip">
 					<div class="sponsorFlip">
-						<img src="'.$company[3].'" alt="More about '.$company[0].'" />
+						<img src="';
+				echo get_site_url();
+				echo '/'.$company[3].'" alt="More about '.$company[0].'" />
 					</div>
 					
 					<div class="sponsorData">
