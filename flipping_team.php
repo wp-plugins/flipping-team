@@ -171,6 +171,7 @@ function flipping_team_get_all( $sort = "id" ) {
 	$results = array();
 	foreach ( $rows as $row ) {
 		$row['image'] = $row['imageloc'];
+		$row['website'] = $row['url'];
 		unset( $row['imageloc'] );
 		array_push( $results, $row );
 	}
@@ -184,6 +185,7 @@ function flipping_team_get( $id ) {
 	                           $id );
 	$row = $wpdb->get_row( $request, ARRAY_A, 0 );
 	$row['image'] = $row['imageloc'];
+	$row['website'] = $row['url'];
 	unset( $row['imageloc'] );
 	return $row;
 }
