@@ -191,6 +191,7 @@ function flipping_team_member() {
 			<?php } ?>
 
 			<form method="post" action="<?php echo $form_action; ?>">
+				<div id="poststuff">
 				<table class="form-table">
 					<tr>
 						<th valign="top" scope="row">
@@ -240,6 +241,7 @@ function flipping_team_member() {
 				<p class="submit">
 					<input type="submit" class="button-secondary" value="<?php _e('Save Changes') ?>" />
 				</p>
+				</div>
 			</form>
 		</div>
 		<?php
