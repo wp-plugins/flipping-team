@@ -1,0 +1,44 @@
+msgid "Flipping Team"
+msgstr ""
+
+msgid "View All"
+msgstr ""
+
+msgid "There is currently no member in your team"
+msgstr ""
+
+msgid "Member deleted."
+msgstr ""
+
+msgid "Unable to delete member."
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Add Member to Flipping Team"
+msgstr ""
+
+msgid "%s added to the team."
+msgstr ""
+
+msgid "Unable to create member."
+msgstr ""
+
+msgid "Edit member"
+msgstr ""
+
+msgid "%s edited."
+msgstr ""
+
+msgid "Unable to edit member."
+msgstr ""
+
+msgid "Info"
+msgstr ""
+
+msgid "Choose image"
+msgstr ""
+
+msgid "View All Team Members"
+msgstr ""

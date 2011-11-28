@@ -1,0 +1,44 @@
+msgid "Flipping Team"
+msgstr "L'équipe"
+
+msgid "View All"
+msgstr "Modifier"
+
+msgid "There is currently no member in your team"
+msgstr "Il n'y a pour l'instant aucun membre dans votre équipe"
+
+msgid "Member deleted."
+msgstr "Membre supprimé."
+
+msgid "Unable to delete member."
+msgstr "Impossible de supprimer le membre."
+
+msgid "Add"
+msgstr "Ajouter"
+
+msgid "Add Member to Flipping Team"
+msgstr "Ajouter un membre à l'équipe"
+
+msgid "%s added to the team."
+msgstr "%s ajouté à l'équipe."
+
+msgid "Unable to create member."
+msgstr "Impossible de créer le membre."
+
+msgid "Edit member"
+msgstr "Modifier un membre"
+
+msgid "%s edited."
+msgstr "%s modifié."
+
+msgid "Unable to edit member."
+msgstr "Impossible de modifier le membre."
+
+msgid "Info"
+msgstr "Présentation"
+
+msgid "Choose image"
+msgstr "Choisir une image"
+
+msgid "View All Team Members"
+msgstr "L'équipe"

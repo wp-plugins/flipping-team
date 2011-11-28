@@ -1,0 +1,45 @@
+/* The main container */
+.team-members-list {
+	margin-bottom: 30px;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+/* Each member container */
+.team-member {
+	list-style-type: none;
+	padding: 1em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #eee;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.team-member-photo {
+	float: left;
+	margin-right: 1em;
+}
+
+.team-member-name {
+	clear: none;
+}
+
+.team-member-info {
+}
+
+.team-member-website {
+	font-size: 10px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+/* Admin styles */
+.flipping-team-tool-bar {
+	margin-bottom: 3em;
+}
+.flipping-team-tool-bar form {
+	display: inline-block;
+}

@@ -1,9 +1,9 @@
 === Flipping Team ===
-Contributors: abhishekgupta92 (this should be a list of wordpress.org userid's)
+Contributors: abhishekgupta92, scil
 Donate link: http://thelazy.info/
 Tags: team, authors, flip, jquery
 Requires at least: 2.0.2
-Tested up to: 3.0.1
+Tested up to: 3.2.1
 Stable tag: 1.4
 
 Team page for your blog who made it possible.
@@ -16,18 +16,10 @@ Nowadays, wordpress is more than just a blog. And behind such website is a team.
 
 *	Copy the contents in the wp-content/plugins directory.
 *	Activate the plugin through the 'Plugins' menu in WordPress
-*	Copy the team.php file to the template directory of your theme.
-*	Configure the settings and add team-mates through Flipping Team Settings.
+*	Set some team members in the Team menu
+*	Use one of the following shortcodes to display the team : [flipping-team], [team], [equipe]
 
 == Frequently Asked Questions ==
-
-= The size does not work? =
-
-Wait for sometime. I would add this feature shortly.
-
-= There seems to be some problem with media uploader? =
-
-I guess the answer remains the same as the above..
 
 == Screenshots ==
 1. This is how your page looks like.
