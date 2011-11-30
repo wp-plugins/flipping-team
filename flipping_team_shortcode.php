@@ -27,7 +27,7 @@ function flipping_team_display_one( $member ) {
 	}
 	$output .= "<h2 class=\"team-member-name\">".$member['name']."</h2>";
 	$output .= '<div class="team-member-info">';
-	$output .= $member['info'];
+	$output .= wpautop($member['info']);
 	$output .= '</div>';
 	$output .= "<div style=\"clear:both;\"></div>";
 	$output .= '</li>';
