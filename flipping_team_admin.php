@@ -19,7 +19,6 @@
 
 // Setup admin part, views and actions. Requires shortcode
 
-
 // create custom plugin settings menu
 add_action( 'admin_menu', 'flipping_team_create_menu' );
 
@@ -49,12 +48,12 @@ function flipping_team_create_menu() {
 	               'flipping_team_view',
 	               plugins_url( '/images/icon.png', __FILE__ ) );
 	// Settings page
-	/*add_submenu_page( 'options-general.php',
+	add_submenu_page( 'options-general.php',
 	                  __( 'Flipping Team', 'flpt' ),
 	                  __( 'Flipping Team', 'flpt' ),
 	                  'administrator',
 	                  'flipping-team-settings',
-	                  'flipping_team_settings' );*/
+	                  'flipping_team_settings' );
 	// Add member page
 	add_submenu_page( 'flipping-team',
 	                  __( 'Add', 'flpt' ),
@@ -64,56 +63,6 @@ function flipping_team_create_menu() {
 	                  'flipping_team_member' );
 
 }
-
-
-/** Flipping team config screen */
-function flipping_team_settings()
-{
-	if ( isset( $_REQUEST['team_size'] ) ) {
-		add_option( "team_size", $_REQUEST['team_size'], '', 'yes' );
-	}
-	if ( isset( $_REQUEST['team_title'] ) )	{
-		add_option( "team_title", $_REQUEST['team_title'], '', 'yes' );
-	}
-	if ( isset( $_REQUEST['if_team_sidebar'] ) ) {
-		add_option( "if_team_sidebar", $_REQUEST['if_team_sidebar'], '', 'yes' );
-	}
-?>
-	<div class="wrap">
-		<h2><?php _e( 'Flipping Team' , 'flpt' ); ?></h2>
-
-		<form method="post" action="admin.php?page=flipping-menu">
-			<table class="form-table">
-				<tr valign="top">
-					<th scope="row">Size of Thumbnails</th>
-					<td><input type="text" name="team_size" value="<?php echo get_option('team_size'); ?>" /></td>
-				</tr>
-			
-				<tr valign="top">
-					<th scope="row">Title</th>
-					<td><input type="text" name="team_title" value="<?php echo get_option('team_title'); ?>" /></td>
-				</tr>
-			
-				<tr valign="top">
-					<th scope="row">Add Sidebar</th>
-					<td>
-						<select>
-							<option value="yes">Yes</option>
-							<option value="no">No</option>
-						</select>
-					</td>
-				</tr>
-			</table>
-		
-			<p class="submit">
-				<input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
-			</p>
-		</form>
-	</div>
-</div>
-<?php
-}
-
 
 /** Add/edit member screen */
 function flipping_team_member() {
@@ -277,7 +226,7 @@ function flipping_team_view() {
 		<ul class="team-members-list">
 <?php
 		foreach ($members as $member) {
-			echo flipping_team_display_one( $member );
+			echo flipping_team_display_one( $member, flipping_team_opt_use_flipping_effect() );
 ?>
 			<li class="flipping-team-tool-bar">
 				<form action="admin.php">

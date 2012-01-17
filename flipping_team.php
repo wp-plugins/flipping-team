@@ -190,6 +190,8 @@ function flipping_team_get( $id ) {
 	return $row;
 }
 
+// Register options
+require_once( dirname( __FILE__ ) . "/flipping_team_options.php" );
 // Register shortcode
 require_once( dirname( __FILE__ )."/flipping_team_shortcode.php");
 // Register admin options

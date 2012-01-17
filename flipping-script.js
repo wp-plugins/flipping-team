@@ -1,11 +1,11 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
 	/* The following code is executed once the DOM is loaded */
 	
-	$('.sponsorFlip').bind("click",function(){
+	jQuery('.team-member-flip').bind("click",function(){
 		
-		// $(this) point to the clicked .sponsorFlip element (caching it in elem for speed):
+		// jQuery(this) point to the clicked .team-member-flip element (caching it in elem for speed):
 		
-		var elem = $(this);
+		var elem = jQuery(this);
 		
 		// data('flipped') is a flag we set when we flip the element:
 		
@@ -27,10 +27,10 @@ $(document).ready(function(){
 				direction:'lr',
 				speed: 350,
 				onBefore: function(){
-					// Insert the contents of the .sponsorData div (hidden from view with display:none)
-					// into the clicked .sponsorFlip div before the flipping animation starts:
+					// Insert the contents of the .team-member-data div (hidden from view with display:none)
+					// into the clicked .team-member-data div before the flipping animation starts:
 					
-					elem.html(elem.siblings('.sponsorData').html());
+					elem.html(elem.siblings('.team-member-data[data-id="' + elem.attr('data-id') + '"]').html());
 				}
 			});
 			
