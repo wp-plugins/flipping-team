@@ -26,12 +26,7 @@ jQuery(document).ready(function(){
 			elem.flip({
 				direction:'lr',
 				speed: 350,
-				onBefore: function(){
-					// Insert the contents of the .team-member-data div (hidden from view with display:none)
-					// into the clicked .team-member-data div before the flipping animation starts:
-					
-					elem.html(elem.siblings('.team-member-data[data-id="' + elem.attr('data-id') + '"]').html());
-				}
+				content: elem.siblings('.team-member-data[data-id="' + elem.attr('data-id') + '"]')
 			});
 			
 			// Setting the flag:

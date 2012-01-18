@@ -17,14 +17,30 @@
 	border-bottom-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
+/* Additional style for flipping container */
+.team-member-flip {
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	overflow: auto;
+	margin: 1em;
+}
 
 .team-member-photo {
 	float: left;
 	margin-right: 1em;
 }
+.team-member-flip .team-member-photo {
+	float: none;
+	display: block;
+	margin: auto;
+}
 
 .team-member-name {
 	clear: none;
+}
+.team-member-flip .team-member-name {
+	text-align: center;
 }
 
 .team-member-info {
