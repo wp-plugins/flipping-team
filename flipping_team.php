@@ -3,9 +3,9 @@
 	Plugin Name: Flipping Team
 	Plugin URI: http://abhishekgupta92.info
 	Description: Team page for your blog who made it possible.
-	Version: 1.4
-	Author: abhishekgupta92
-	Author URI: http://abhishekgupta92.info
+	Version: 2.0.0
+	Author: abhishekgupta92, scil
+	Author URI: http://abhishekgupta92.info, http://scil.coop
 
 	Copyright 2011 Abhishek Gupta (email : abhishekgupta.iitd@gmail.com)
 	               Cédric Houbart (email : cedric@scil.coop)
