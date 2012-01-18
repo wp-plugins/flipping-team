@@ -29,12 +29,25 @@ if ( flipping_team_opt_use_flipping_effect() ) {
 
 function flipping_team_display_one( $member, $flipping_effect ) {
 	if ( ! $flipping_effect ) {
+		// No flip display
 		$output = "<li class=\"team-member\">";
+		// Show image if set
 		if ( isset( $member['image'] ) && $member['image'] != "" ) {
 			$output .= "<img class=\"team-member-photo\" src=\"";
 			$output .= $member['image'].'" alt="'.$member['name'].'" />';
 		}
+		// Show name and if set website
 		$output .= "<h2 class=\"team-member-name\">".$member['name']."</h2>";
+		if ( isset( $member['website'] ) && $member['website'] != "" ) {
+			$url = $member['website'];
+			if ( substr( $url, 0, 7 ) != "http://" ) {
+				$url = "http://" . $url;
+			}
+			$output .= '<div class="team-member-website">';
+			$output .= '<a href="' . $url . '">' . $member['website'] . '</a>';
+			$output .= '</div>';
+		}
+		// Show description
 		$output .= '<div class="team-member-info">';
 		$output .= wpautop($member['info']);
 		$output .= '</div>';
@@ -42,15 +55,26 @@ function flipping_team_display_one( $member, $flipping_effect ) {
 		$output .= '</li>';
 		return $output;
 	} else {
+		// Flip display
 		$output = '<li class="team-member team-member-flip" data-id="' . $member['id'] . '" title="' . __( 'Click to flip', 'flpt' ) . '">';
 		if ( isset( $member['image'] ) && $member['image'] != "" ) {
 			$output .= "<img class=\"team-member-photo\" src=\"";
 			$output .= $member['image'].'" alt="'.$member['name'].'" />';
 		}
+		// Show name and if set website
 		$output .= "<h2 class=\"team-member-name\">".$member['name']."</h2>";
+		if ( isset( $member['website'] ) && $member['website'] != "" ) {
+			$url = $member['website'];
+			if ( substr( $url, 0, 7 ) != "http://" ) {
+				$url = "http://" . $url;
+			}
+			$output .= '<div class="team-member-website">';
+			$output .= '<a href="' . $url . '">' . $member['website'] . '</a>';
+			$output .= '</div>';
+		}
 		$output .= "<div style=\"clear:both;\"></div>";
 		$output .= "</li>";
-		
+		// Set back display (flip data)
 		$output .= '<div class="team-member-data" data-id="' . $member['id'] . '" style="display:none;">';
 		$output .= '<div class="team-member-info">' . wpautop( $member['info'] ) .'</div>';
 		$output .= "<div style=\"clear:both;\"></div>";
