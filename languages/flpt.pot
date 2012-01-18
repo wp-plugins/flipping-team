@@ -1,6 +1,9 @@
 msgid "Flipping Team"
 msgstr ""
 
+msgid "Use flipping effect"
+msgstr ""
+
 msgid "View All"
 msgstr ""
 

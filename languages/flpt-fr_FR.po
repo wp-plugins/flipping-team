@@ -1,6 +1,9 @@
 msgid "Flipping Team"
 msgstr "L'équipe"
 
+msgid "Use flipping effect"
+msgstr "Activer l'effet de retournement"
+
 msgid "View All"
 msgstr "Modifier"
 
