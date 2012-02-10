@@ -25,7 +25,7 @@ Available in English and French.
 *	Copy the contents in the wp-content/plugins directory.
 *	Activate the plugin through the 'Plugins' menu in WordPress
 *	Set some team members in the Team menu
-*	Use one of the following shortcodes to display the team : [flipping-team], [team], [équipe]
+*	Use one of the following shortcodes to display the team : [flipping_team], [team], [équipe], [equipa]
 
 == Frequently Asked Questions ==
 

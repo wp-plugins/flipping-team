@@ -103,4 +103,5 @@ function flipping_team_shortcode( $atts ) {
 add_shortcode( 'flipping_team', 'flipping_team_shortcode' ); // Generic
 add_shortcode( 'team', 'flipping_team_shortcode' );          // EN
 add_shortcode( 'équipe', 'flipping_team_shortcode' );        // FR
+add_shortcode( 'equipa', 'flipping_team_shortcode' );        // PT
 ?>
