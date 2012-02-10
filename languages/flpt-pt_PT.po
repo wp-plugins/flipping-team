@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flipping Team\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Pedro Nave <pedronave@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Portuguese \n"
+"X-Poedit-Country: Portugal\n"
+
+msgid "Flipping Team"
+msgstr "Membros da Equipa"
+
+msgid "Use flipping effect"
+msgstr "Usar efeito flip"
+
+msgid "View All"
+msgstr "Ver todos"
+
+msgid "There is currently no member in your team"
+msgstr "De momento não tem nenhum membro na sua equipa."
+
+msgid "Member deleted."
+msgstr "Membro apagado."
+
+msgid "Unable to delete member."
+msgstr "Não foi possível apagar membro."
+
+msgid "Add"
+msgstr "Adicionar"
+
+msgid "Add Member to Flipping Team"
+msgstr "Adiocinar Membro"
+
+msgid "%s added to the team."
+msgstr "%s adicionado à equipa."
+
+msgid "Unable to create member."
+msgstr "Não foi possível criar membro."
+
+msgid "Edit member"
+msgstr "Editar membro"
+
+msgid "%s edited."
+msgstr "%s editado."
+
+msgid "Unable to edit member."
+msgstr "Não foi possível editar membro."
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Choose image"
+msgstr "Escolher Imagem"
+
+msgid "View All Team Members"
+msgstr "Ver todos membros da equipa"
