@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: a <a@a.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Flipping Team"
+msgstr "मंडली"
+
+msgid "Use flipping effect"
+msgstr "प्रभाव का उपयोग करें"
+
+msgid "View All"
+msgstr "सभी को देखें"
+
+msgid "There is currently no member in your team"
+msgstr "आपकी मण्डली में फ़िलहाल कोई सदस्य नहीं है"
+
+msgid "Member deleted."
+msgstr "सदस्य को हटा दिया है"
+
+msgid "Unable to delete member."
+msgstr "सदस्य को हटा नहीं पाए"
+
+msgid "Add"
+msgstr "जोड़े"
+
+msgid "Add Member to Flipping Team"
+msgstr "सदस्य को मण्डली में डालें"
+
+msgid "%s added to the team."
+msgstr "%s को मण्डली में दाल दिया गया है"
+
+msgid "Unable to create member."
+msgstr "सदस्य को बनाने में हम असक्षम थे"
+
+msgid "Edit member"
+msgstr "सदस्य के विवरण को संपादित करे"
+
+msgid "%s edited."
+msgstr "%s को सम्पन्दित कर दिया गया है"
+
+msgid "Unable to edit member."
+msgstr "सदस्य को सम्पादित करने में असफलता हासिल हुई है"
+
+msgid "Info"
+msgstr "जानकारी"
+
+msgid "Choose image"
+msgstr "चित्र को चुने"
+
+msgid "View All Team Members"
+msgstr "सभी सदस्य्यो को देखे"
+

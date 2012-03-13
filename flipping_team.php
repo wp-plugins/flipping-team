@@ -1,11 +1,11 @@
 <?php
 /*
 	Plugin Name: Flipping Team
-	Plugin URI: http://abhishekgupta92.info
+	Plugin URI: http://abhishek.cc
 	Description: Team page for your blog who made it possible.
 	Version: 2.0.0
 	Author: abhishekgupta92, scil
-	Author URI: http://abhishekgupta92.info, http://scil.coop
+	Author URI: http://abhishek.cc, http://scil.coop
 
 	Copyright 2011 Abhishek Gupta (email : abhishekgupta.iitd@gmail.com)
 	               Cédric Houbart (email : cedric@scil.coop)
@@ -56,16 +56,16 @@ function flipping_team_install() {
 
 		$table_name = $wpdb->prefix . "team";
 		$name  = "Abhishek Gupta";
-		$website = "http://abhishekgupta92.info";
-		$info = "Abhishek is a sophomore Undergraduate student at IIT Delhi.";
+		$website = "http://abhishek.cc";
+		$info = "Student at IIT Delhi. More about on his website abhishek.cc or his startup zumbl.com .";
 		$imageloc = get_site_url()."/wp-content/plugins/flipping-team/images/images.jpeg";
 
 		$rows_affected = $wpdb->insert( $table_name, array( 'time' => current_time('mysql'), 'name' => $name, 'url' => $website, 'imageloc' => $imageloc, 'info' => $info ) );
 
 		$table_name = $wpdb->prefix . "team";
-		$name  = "Abhishek Gupta";
-		$website = "http://abhishekgupta92.info";
-		$info = "Abhishek is a sophomore Undergraduate student at IIT Delhi.";
+		$name  = "Scii";
+		$website = "http://scil.coop";
+		$info = "More about on his website.";
 		$imageloc = get_site_url() . "/wp-content/plugins/flipping-team/images/images.jpeg";
 
 		$rows_affected = $wpdb->insert( $table_name, array( 'time' => current_time('mysql'), 'name' => $name, 'url' => $website, 'imageloc' => $imageloc, 'info' => $info ) );

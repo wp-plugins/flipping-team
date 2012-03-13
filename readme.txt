@@ -1,6 +1,6 @@
 === Flipping Team ===
 Contributors: abhishekgupta92, scil
-Donate link: http://thelazy.info/
+Donate link: http://abhishek.cc
 Tags: team, authors, flip, jquery
 Requires at least: 2.6
 Tested up to: 3.3.1
@@ -18,20 +18,20 @@ The plugin provides the administrator with a nice interface to add/edit/delete t
 * Cool Jquery effects
 * Easy to configure and install
 
-Available in English and French.
+Available in English, Hindi and French.
 
 == Installation ==
 
 *	Copy the contents in the wp-content/plugins directory.
 *	Activate the plugin through the 'Plugins' menu in WordPress
 *	Set some team members in the Team menu
-*	Use one of the following shortcodes to display the team : [flipping-team], [team], [équipe]
+*	Use one of the following shortcodes to display the team : [flipping-team] (generic), [team] (en), [équipe] (fr), [मंडली] (hi)
 
 == Frequently Asked Questions ==
 
 = How do I resize member's picture? =
 
-Pictures are not resized. Select the right size while choosing it from the media library. If you are using flipping effect the card default size is 250x250px.
+Pictures are not resized. Select the right size while choosing it from the media library. If you are using flipping effect the card default size is 250x250px. You can also resize the images while uploading the images using the inline image editor provided with Wordpress.
 
 
 == Screenshots ==
