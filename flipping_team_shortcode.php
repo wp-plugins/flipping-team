@@ -1,20 +1,21 @@
 <?php
 /*
-	Copyright 2011 Abhishek Gupta (email : abhishekgupta.iitd@gmail.com)
-	               Cédric Houbart (email : cedric@scil.coop)
+	Flipping Team
+	Copyright 2011-2012 Abhishek Gupta (email : abhishekgupta.iitd@gmail.com)
+	                    Cédric Houbart (email : cedric@scil.coop)
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License, version 2, as 
-    published by the Free Software Foundation.
+    This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 2 of the License, or
+	(at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 /* Definition of shortcode to include team template in a post or page */
@@ -34,10 +35,12 @@ function flipping_team_display_one( $member, $flipping_effect ) {
 		// Show image if set
 		if ( isset( $member['image'] ) && $member['image'] != "" ) {
 			$output .= "<img class=\"team-member-photo\" src=\"";
-			$output .= $member['image'].'" alt="'.$member['name'].'" />';
+			$output .= $member['image'].'" alt="'
+			           .esc_attr(apply_filters('the_title', $member['name'])).'" />';
 		}
 		// Show name and if set website
-		$output .= "<h2 class=\"team-member-name\">".$member['name']."</h2>";
+		$output .= "<h2 class=\"team-member-name\">"
+		           .apply_filters('the_title', $member['name'])."</h2>";
 		if ( isset( $member['website'] ) && $member['website'] != "" ) {
 			$url = $member['website'];
 			if ( substr( $url, 0, 7 ) != "http://" ) {
@@ -49,7 +52,7 @@ function flipping_team_display_one( $member, $flipping_effect ) {
 		}
 		// Show description
 		$output .= '<div class="team-member-info">';
-		$output .= wpautop($member['info']);
+		$output .= apply_filters('the_content', wpautop($member['info']));
 		$output .= '</div>';
 		$output .= "<div style=\"clear:both;\"></div>";
 		$output .= '</li>';
@@ -59,10 +62,12 @@ function flipping_team_display_one( $member, $flipping_effect ) {
 		$output = '<li class="team-member team-member-flip" data-id="' . $member['id'] . '" title="' . __( 'Click to flip', 'flpt' ) . '">';
 		if ( isset( $member['image'] ) && $member['image'] != "" ) {
 			$output .= "<img class=\"team-member-photo\" src=\"";
-			$output .= $member['image'].'" alt="'.$member['name'].'" />';
+			$output .= $member['image'].'" alt="'
+			           .esc_attr(apply_filters('the_title', $member['name'])).'" />';
 		}
 		// Show name and if set website
-		$output .= "<h2 class=\"team-member-name\">".$member['name']."</h2>";
+		$output .= "<h2 class=\"team-member-name\">"
+		           .apply_filters('the_title', $member['name'])."</h2>";
 		if ( isset( $member['website'] ) && $member['website'] != "" ) {
 			$url = $member['website'];
 			if ( substr( $url, 0, 7 ) != "http://" ) {
@@ -76,7 +81,8 @@ function flipping_team_display_one( $member, $flipping_effect ) {
 		$output .= "</li>";
 		// Set back display (flip data)
 		$output .= '<div class="team-member-data" data-id="' . $member['id'] . '" style="display:none;">';
-		$output .= '<div class="team-member-info">' . wpautop( $member['info'] ) .'</div>';
+		$output .= '<div class="team-member-info">'
+		           . apply_filters( 'the_content', wpautop( $member['info'] ) ) .'</div>';
 		$output .= "<div style=\"clear:both;\"></div>";
 		$output .= '</div>';
 		return $output;
