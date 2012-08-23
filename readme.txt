@@ -3,8 +3,8 @@ Contributors: abhishekgupta92, scil
 Donate link: http://abhishek.cc
 Tags: team, authors, flip, jquery
 Requires at least: 2.6
-Tested up to: 3.3.1
-Stable tag: 2.0.0
+Tested up to: 3.4
+Stable tag: 2.1.0
 
 Team page for your blog who made it possible.
 
@@ -45,6 +45,11 @@ Pictures are not resized. Select the right size while choosing it from the media
 
 == Changelog ==
 
+= 2.1.0 =
+
+* Hindi translation
+* Parse member's name and description for dynamic content (shortcode…)
+
 = 2.0.0 =
 
 * Use shortcodes
@@ -53,6 +58,10 @@ Pictures are not resized. Select the right size while choosing it from the media
 * Flat mode
 
 == Upgrade Notice ==
+
+= 2.1.0 =
+
+Version 2.1.0 enables to use shortcode or other dynamic tags in member's name and description.
 
 = 2.0.0 =
 
