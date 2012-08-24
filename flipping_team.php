@@ -3,7 +3,7 @@
 	Plugin Name: Flipping Team
 	Plugin URI: http://abhishek.cc
 	Description: Team page for your blog who made it possible.
-	Version: 2.1.0
+	Version: 2.1.1
 	Author: abhishekgupta92, scil
 	Author URI: http://abhishek.cc, http://scil.coop
 	Licence: GPL2 or any later
