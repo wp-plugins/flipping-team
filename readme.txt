@@ -4,7 +4,7 @@ Donate link: http://abhishek.cc
 Tags: team, authors, flip, jquery
 Requires at least: 2.6
 Tested up to: 3.4
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 
 Team page for your blog who made it possible.
 
@@ -18,7 +18,7 @@ The plugin provides the administrator with a nice interface to add/edit/delete t
 * Cool Jquery effects
 * Easy to configure and install
 
-Available in English, Hindi and French.
+Available in English, Hindi, French and Portugese.
 
 == Installation ==
 
@@ -44,6 +44,10 @@ Pictures are not resized. Select the right size while choosing it from the media
 6. View members without flipping effects.
 
 == Changelog ==
+
+= 2.1.1 =
+
+* Portugese translation
 
 = 2.1.0 =
 
